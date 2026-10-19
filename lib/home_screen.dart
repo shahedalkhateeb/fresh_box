@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Text(
-                isEnglish ? 'عربي' : 'EN',
+                isEnglish ? 'AR' : 'EN',
                 style: GoogleFonts.montserrat(
                   fontSize: 13.sp,
                   fontWeight: FontWeight.w600,

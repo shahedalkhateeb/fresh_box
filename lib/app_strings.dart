@@ -30,7 +30,7 @@ class AppStrings {
     },
     'ar': {
       'yourLocation': 'موقعك',
-      'searchHint': 'شو بدك تاكل؟',
+      'searchHint': 'ماذا تفضل ؟',
       'featured': 'المميز',
       'nearbyYou': 'قريب منك',
       'trending': 'الأكثر رواجاً',
