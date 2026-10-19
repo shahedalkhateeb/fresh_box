@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get_storage/get_storage.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -146,7 +147,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    GetStorage().write('onboardingSeen', true);
+                    Navigator.pushReplacementNamed(context, '/home');
+                  },
                   child: Text(
                     'Get Started',
                     style: GoogleFonts.poppins(
